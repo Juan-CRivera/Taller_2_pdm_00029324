@@ -12,7 +12,6 @@ interface RestaurantRepository {
 class Repository: RestaurantRepository {
 
     private val restaurants = listOf(
-        // ─── Comida Rápida ────────────────────────────────────────────────────
         Restaurant(
             id = 1,
             name = "Wendys",
@@ -70,8 +69,6 @@ class Repository: RestaurantRepository {
                 Dish(10, "Quesadilla", "Tortilla de maíz con queso derretido y rajas poblanas", "https://images.unsplash.com/photo-1618040996337-56904b7850b9?q=80&w=600")
             )
         ),
-
-        // ─── Italiana ─────────────────────────────────────────────────────────
         Restaurant(
             id = 4,
             name = "Dominos Pizza",
@@ -104,7 +101,7 @@ class Repository: RestaurantRepository {
             name = "Sushi King",
             description = "Sushi fresco preparado por chefs japoneses con pescado traído directamente del mar.",
             imageUrl = "https://sushiking.com.sv/wp-content/uploads/2021/04/Logo-Sushi-King.png",
-            categories = listOf("Asiática", "Japonesa"),
+            categories = listOf("Asiática"),
             menu = listOf(
                 Dish(18, "Roll California", "Cangrejo, aguacate y pepino con ajonjolí", "https://images.unsplash.com/photo-1617196034183-421b4040ed20?q=80&w=600"),
                 Dish(19, "Nigiri de Salmón", "Arroz de sushi con lámina de salmón fresco", "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?q=80&w=600"),
@@ -117,15 +114,13 @@ class Repository: RestaurantRepository {
             name = "China Wok",
             description = "Cocina asiática de wok rápida y llena de sabor, con ingredientes frescos salteados al momento.",
             imageUrl = "https://www.chinawok.com.sv/wp-content/uploads/2020/09/logo-chinawok.png",
-            categories = listOf("Asiática", "China"),
+            categories = listOf("Asiática"),
             menu = listOf(
                 Dish(22, "Arroz Frito Especial", "Arroz, pollo, camarón, huevo y vegetales salteados", "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=600"),
                 Dish(23, "Chow Mein de Res", "Noodles salteados con tiras de res y verduras", "https://images.unsplash.com/photo-1534482421-64566f976cfa?q=80&w=600"),
                 Dish(24, "Dim Sum Surtido", "Selección de 6 dumplings al vapor con salsa de soya", "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=600")
             )
         ),
-
-        // ─── Saludable ────────────────────────────────────────────────────────
         Restaurant(
             id = 8,
             name = "Go Green",
@@ -152,7 +147,7 @@ class Repository: RestaurantRepository {
             )
         ),
 
-        // ─── Postres ──────────────────────────────────────────────────────────
+
         Restaurant(
             id = 10,
             name = "Crepe Lovers",

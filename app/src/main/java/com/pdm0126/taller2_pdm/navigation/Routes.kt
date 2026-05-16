@@ -3,13 +3,14 @@ package com.pdm0126.taller2_pdm.navigation
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 
+@Serializable
 sealed class Routes : NavKey {
     @Serializable
-    object Home : Routes()
+    data class Home(val id: String = "home") : Routes()
 
     @Serializable
-    data class Detail() : Routes()
+    data class Detail(val restaurantId: Int) : Routes()
 
     @Serializable
-    object Search : Routes()
+    data class Search(val id: String = "search") : Routes()
 }
