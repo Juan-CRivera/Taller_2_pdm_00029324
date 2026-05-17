@@ -35,7 +35,7 @@ fun MainNavigation() {
             }
 
             entry<Routes.Detail> {route ->
-                val detailVm: DetailViewModel = viewModel {
+                val detailVm: DetailViewModel = viewModel(key = "detail_${route.restaurantId}") {
                     DetailViewModel(repository, route.restaurantId)
                 }
                 DetailScreen(
